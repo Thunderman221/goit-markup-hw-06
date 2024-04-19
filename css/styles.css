@@ -34,9 +34,9 @@ ul {
 }
 .container {
   /* width: 1158px; */
-  width: 320px;
+  max-width: 320px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 16px;
 }
 
 /* header */
@@ -56,8 +56,11 @@ ul {
 }
 .bm-btn {
   display: flex;
+  margin: 0;
+  padding: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 /* Mob Menu */
@@ -163,7 +166,7 @@ ul {
   text-transform: uppercase;
   text-decoration: none;
   margin-right: 76px;
-  padding: 24px 0;
+  padding: 17px 0;
   display: block;
 }
 .header-logo-span {
@@ -893,24 +896,27 @@ ul {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 
   /* Header */
   .logo-list {
     display: flex;
+    gap: 40px;
   }
   .bm-btn {
     display: none;
   }
   .address {
-    display: inline-block;
+    display: block;
   }
-
+  .logo {
+    margin-right: 120px;
+  }
   .address-list {
-    display: inline-block;
-    flex-direction: row;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
   }
   /* Section 1 */
 
@@ -1005,8 +1011,20 @@ ul {
 }
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
+    padding: 0 15px;
     display: flex-wrap;
+  }
+  .logo {
+    margin-right: 76px;
+  }
+  .address-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .header-address-ref {
+    font-size: 16px;
+    line-height: 1.5;
   }
 
   /*Header */
