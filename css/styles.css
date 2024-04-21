@@ -967,7 +967,7 @@ ul {
     display: flex;
   }*/
   .sec-two-list-item {
-    flex-basis: calc((100%-1 * 24px) / 2);
+    flex-basis: calc((100% -1 * 24px) / 2);
   }
   .sec-two-list-p {
     line-height: 24px;
@@ -996,7 +996,10 @@ ul {
   /* Section 4*/
 
   .sec-four-list-item {
-    width: ((100%-24px)/2);
+    width: calc((100% - 24px) / 2);
+  }
+  .sec-four-list {
+    gap: 72px;
   }
 
   /* Footer */
@@ -1049,7 +1052,6 @@ ul {
   .container {
     max-width: 1158px;
     padding: 0 15px;
-    display: flex-wrap;
   }
   .logo {
     margin-right: 76px;
@@ -1072,7 +1074,9 @@ ul {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office.jpg);
-    max-width: 1158px;
+    max-width: 1440px;
+    padding: 188px 0;
+    margin: 0 auto 48px;
   }
   @media screen and (min-resolution: 2dppx),
     (min-resolution: 192dpi),
@@ -1099,6 +1103,10 @@ ul {
   }
 
   /* Section 2 */
+  .sec-two {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .sec-two-list {
     flex-wrap: nowrap;
   }
@@ -1116,6 +1124,7 @@ ul {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    font-size: 400;
   }
   .sec-two-list-header-three {
     font-weight: 500;
@@ -1128,14 +1137,15 @@ ul {
   }
 
   /* Section 3 */
-
+  .sec-three {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .sec-three-list {
     justify-content: center;
   }
   .sec-three-list-item {
-    flex-basis: calc(25% - 12px);
-    margin: 0 6px;
-    max-width: 250px;
+    flex-basis: calc((100% - 3 * 24px) / 4);
   }
   .sec-three-header-three {
     font-weight: 500;
@@ -1148,32 +1158,41 @@ ul {
     font-size: 16px;
   }
   /* Section 4 */
-
+  .sec-four {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .sec-four-list {
     justify-content: center;
+    gap: 48px;
   }
   .sec-four-list-item {
-    flex-basis: calc(25% - 12px);
-    margin: 0 6px;
+    width: calc((100% - 48px) / 4);
+    box-shadow: none;
   }
 
   /* Footer */
+  .footer {
+    padding: 100px 0;
+  }
 
   .footer-container {
     flex-wrap: nowrap;
+    gap: 0;
   }
 
-  .footer-container-logo,
-  .sm-container,
-  .subscribe-contaiener {
-    flex: 0 1 auto;
-    width: auto;
-    max-width: 33.33%;
+  .footer-container-logo {
+    width: 264px;
+    margin-right: 120px;
+  }
+  .sm-container {
+    text-align: center;
+    margin-right: 80px;
   }
 
   .subscribe-form {
     align-items: center;
-    margin: 0;
+    margin-right: 24px;
     padding: 0;
   }
 
