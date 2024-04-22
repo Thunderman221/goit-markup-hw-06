@@ -411,6 +411,7 @@ ul {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 72px;
+  justify-content: center;
 }
 .sec-three-list-item {
   background-color: #ffffff;
@@ -967,7 +968,7 @@ ul {
     display: flex;
   }*/
   .sec-two-list-item {
-    flex-basis: calc((100% -1 * 24px) / 2);
+    flex-basis: calc((100% - 1 * 24px) / 2);
   }
   .sec-two-list-p {
     line-height: 24px;
@@ -999,7 +1000,7 @@ ul {
     width: calc((100% - 24px) / 2);
   }
   .sec-four-list {
-    gap: 72px;
+    gap: 72px 24px;
   }
 
   /* Footer */
@@ -1053,6 +1054,9 @@ ul {
     max-width: 1158px;
     padding: 0 15px;
   }
+
+  /*Header */
+
   .logo {
     margin-right: 76px;
   }
@@ -1065,7 +1069,18 @@ ul {
     line-height: 1.5;
   }
 
-  /*Header */
+  .address {
+    display: block;
+    margin-right: 40px;
+  }
+
+  .address-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* Header 1 */
 
   .section-one {
     background-color: #2e2f42;
@@ -1076,7 +1091,6 @@ ul {
       url(../images/people-office.jpg);
     max-width: 1440px;
     padding: 188px 0;
-    margin: 0 auto 48px;
   }
   @media screen and (min-resolution: 2dppx),
     (min-resolution: 192dpi),
@@ -1091,15 +1105,8 @@ ul {
     }
   }
 
-  .address {
-    display: block;
-    margin-right: 40px;
-  }
-
-  .address-list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  .section-one-h-one {
+    margin: 0 auto 48px;
   }
 
   /* Section 2 */
@@ -1124,7 +1131,7 @@ ul {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    font-size: 400;
+    font-weight: 400;
   }
   .sec-two-list-header-three {
     font-weight: 500;
@@ -1164,10 +1171,10 @@ ul {
   }
   .sec-four-list {
     justify-content: center;
-    gap: 48px;
+    gap: 48px 24px;
   }
   .sec-four-list-item {
-    width: calc((100% - 48px) / 4);
+    width: calc((100% - 48px) / 3);
     box-shadow: none;
   }
 
@@ -1192,7 +1199,7 @@ ul {
 
   .subscribe-form {
     align-items: center;
-    margin-right: 24px;
+
     padding: 0;
   }
 
